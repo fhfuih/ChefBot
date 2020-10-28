@@ -1,3 +1,13 @@
+To run locally, first make sure node.js is installed. I am using v12 LTS. Higher version should be okay.
+
+```shell
+cd <project folder>
+npm i -D
+npm start
+```
+
+Should be able to visit `localhost:3000` in the browser now.
+
 # Botkit Starter Kit
 
 This is a Botkit starter kit for web, created with the [Yeoman generator](https://github.com/howdyai/botkit/tree/master/packages/generator-botkit#readme).
