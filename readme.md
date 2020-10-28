@@ -2,7 +2,7 @@ To run locally, first make sure node.js is installed. I am using v12 LTS. Higher
 
 ```shell
 cd <project folder>
-npm i -D
+npm i
 npm start
 ```
 
