@@ -122,7 +122,7 @@ const createDialog = controller => {
 
 Also, tell me when you are done selecting dishes.`, [
         {
-            pattern: /done|that|it|all|finish|end|quit/i,
+            pattern: /done|that|it|all|finish|quit/i,
             type: 'string',
             handler: async (response_text, convo, bot, full_message) => {
                 await bot.replaceDialog(dialog_buy.id)
@@ -168,8 +168,8 @@ Also, tell me when you are done selecting dishes.`,
                 image: 'https://st-cn.meishij.net/r/195/139/8972445/s8972445_148117737119107.jpg',
             },
             {
-                title: 'Scipy Crab',
-                payload: 'Scipy Crab',
+                title: 'Spicy Crab',
+                payload: 'Spicy Crab',
                 image: 'https://st-cn.meishij.net/r/190/82/8520690/s8520690_148335337737830.jpg',
                 disabled: true,
             },
@@ -198,7 +198,7 @@ Also, tell me when you are done selecting dishes.`,
             }
         },
         {
-            pattern: /done|that|it|all|finish|end|quit/i,
+            pattern: /done|that|it|all|finish|quit/i,
             type: 'string',
             handler: async (response_text, convo, bot, full_message) => {
                 await bot.replaceDialog(dialog_buy.id)
@@ -253,7 +253,7 @@ Also, tell me when you are done selecting dishes.`,
             }
         },
         {
-            pattern: /done|that|it|all|finish|end|quit/i,
+            pattern: /done|that|it|all|finish|quit/i,
             type: 'string',
             handler: async (response_text, convo, bot, full_message) => {
                 await bot.replaceDialog('DIALOG_BUY')
@@ -406,14 +406,14 @@ _Step 2:_ cut the pigeons into medium-sized dices.`)
         'The pigeons should be cut into ~5cm dices'
     ]);
 
-    dialog_cook_v2.say(`#### Fried Tomatos & Eggs
+    dialog_cook_v2.say(`#### Fried Tomatoes & Eggs
 
-_Step 1:_ cut the tomatos into dices or pieces.`)
+_Step 1:_ cut the tomatoes into dices or pieces.`)
     confirmNext(dialog_cook_v2, [
         `![alt](https://st-cn.meishij.net/rs/115/13/2253365/n2253365_30038.jpg)`,
     ]);
 
-    dialog_cook_v2.say(`#### Fried Tomatos & Eggs
+    dialog_cook_v2.say(`#### Fried Tomatoes & Eggs
 
 _Step 2:_ whip the eggs.`)
     confirmNext(dialog_cook_v2, [
@@ -438,21 +438,21 @@ Then add pork and salt and say sauce for seasoning and it is ready to serve.`);
         'When the green peppers turn soft, you can add the seasonings.'
     ]);
 
-    dialog_cook_v2.say(`#### Fried Tomatos & Eggs
+    dialog_cook_v2.say(`#### Fried Tomatoes & Eggs
 
 _Step 3:_ stir-fry the eggs.`)
     confirmNext(dialog_cook_v2, [
         `![alt](https://st-cn.meishij.net/rs/115/13/2253365/n2253365_64775.jpg)`,
     ]);
 
-    dialog_cook_v2.say(`#### Fried Tomatos & Eggs
+    dialog_cook_v2.say(`#### Fried Tomatoes & Eggs
 
-_Step 4:_ add in tomatos and stir-fry until they are all done.`)
+_Step 4:_ add in tomatoes and stir-fry until they are all done.`)
     confirmNext(dialog_cook_v2, [
         `![alt](https://st-cn.meishij.net/rs/115/13/2253365/n2253365_68740.jpg)`,
     ]);
 
-    dialog_cook_v2.say(`#### Fried Tomatos & Eggs
+    dialog_cook_v2.say(`#### Fried Tomatoes & Eggs
 
 _Step 5:_ add salt and optionally white sugar for seasoning. Then it is ready to serve!`)
     confirmNext(dialog_cook_v2, [
@@ -482,8 +482,8 @@ _Step 4:_ Turn down the fire and simmer for 3 hours. Then it is ready to serve.`
         text: 'Here are the search results',
         quick_replies: [
             {
-                title: 'Fried Tomatos w/ Eggs',
-                payload: 'Fried Tomatos wtih Eggs',
+                title: 'Fried Tomatoes w/ Eggs',
+                payload: 'Fried Tomatoes wtih Eggs',
                 image: 'https://s1.ig.meishij.net/p/20130605/ab2a8f588baa3eb3edc726d18475d86c.jpg',
             },
             {
@@ -500,11 +500,11 @@ _Step 4:_ Turn down the fire and simmer for 3 hours. Then it is ready to serve.`
             handler: async (response_text, convo, bot, full_message) => {
                 await bot.say('Here are the additional ingredients you may need to prepare.')
                 await bot.say(
-                    `### Fried Tomatos w/ Eggs
-- Tomatos *2
+                    `### Fried Tomatoes w/ Eggs
+- Tomatoes *2
 - Eggs *2`
                 )
-                await bot.say('_Fried Tomatos w/ Eggs_ is added to your current task flow!')
+                await bot.say('_Fried Tomatoes w/ Eggs_ is added to your current task flow!')
                 await bot.replaceDialog(dialog_cook_v2.id);
             }
         },
